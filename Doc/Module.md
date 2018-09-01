@@ -21,7 +21,7 @@ QTAppModuleRegister(PayService, QTAppEventPriorityDefault)
 
 ## 响应事件
 
-实现协议`QTAppModule`种的方法
+实现协议`QTAppModule`中的方法
 
 ```
 @interface PayService()<QTAppModule>
@@ -34,7 +34,7 @@ QTAppModuleRegister(PayService, QTAppEventPriorityDefault)
 }
 
 /// App启动
-- (void)appDidFinishLuanch:(QTAppDidLaunchEvent *)event{
+- (void)appDidFinishLaunch:(QTAppDidLaunchEvent *)event{
     NSLog(@"PayService: appDidFinishLuanch");
 }
 
